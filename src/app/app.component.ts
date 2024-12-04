@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { RentalFormComponent } from './rental-form/rental-form.component';
+import { RentalDetailformComponent } from './rental-detailform/rental-detailform.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,HttpClientModule,RentalFormComponent],
+  imports: [RouterOutlet,FormsModule,HttpClientModule,RentalFormComponent,RentalDetailformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

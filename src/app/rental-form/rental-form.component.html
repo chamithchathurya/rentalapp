@@ -6,19 +6,19 @@
     </div>
     <div class="mb-3">
       <label for="rentaldate" class="form-label">Name</label>
-      <input type="text" class="form-control" id="rentaldate" placeholder="rental date" [(ngModel)]="item.name">
+      <input type="text" class="form-control" id="rentaldate"  [(ngModel)]="item.name">
     </div>
     <div class="mb-3">
       <label for="returndate" class="form-label">Rental Per day</label>
-      <input type="text" class="form-control" id="returndate" placeholder="return date"[(ngModel)]="item.rentalPreDay">
+      <input type="text" class="form-control" id="returndate" [(ngModel)]="item.rentalPreDay">
     </div>
     <div class="mb-3">
       <label for="duedate" class="form-label">Fine per day</label>
-      <input type="text" class="form-control" id="duedate" placeholder="Due date"[(ngModel)]="item.finePerDay">
+      <input type="text" class="form-control" id="duedate" [(ngModel)]="item.finePerDay">
     </div>
     <div class="mb-3">
       <label for="totalcost" class="form-label">Availibility</label>
-      <input type="text" class="form-control" id="totalcost" placeholder="totalcost"[(ngModel)]="item.availability">
+      <input type="text" class="form-control" id="totalcost" [(ngModel)]="item.availability">
     </div>
     <div class="d-flex">
       <button (click)="add()">Add</button>

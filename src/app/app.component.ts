@@ -2,10 +2,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { RentalFormComponent } from './rental-form/rental-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,HttpClientModule],
+  imports: [RouterOutlet,FormsModule,HttpClientModule,RentalFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

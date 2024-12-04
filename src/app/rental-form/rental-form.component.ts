@@ -13,18 +13,33 @@ export class RentalFormComponent {
 
   constructor(private http:HttpClient){}
 
+  
+  
   item={
     id:null,
      name:null,
      rentalPreDay:null,
      finePerDay:null,
-     availability:null
-  }
+     availability:null}
+
+     id:any=this.item.id
 
   add(){
     console.log(this.item);
     this.http.post("http://localhost:8080/add-item",this.item).subscribe(data=>{
       alert("item Added")
+    })
+  }
+  update(id:any){
+    console.log(this.id);
+    this.http.patch(`http://localhost:8080/edit-item/${this.id}`).subscribe(data=>{
+      alert("item Edit")
+    })
+  }
+  delete(){
+    console.log(this.id);
+    this.http.delete(`http://localhost:8080/delete-item/${this.id}`).subscribe(data=>{
+      alert("item Delete")
     })
   }
 

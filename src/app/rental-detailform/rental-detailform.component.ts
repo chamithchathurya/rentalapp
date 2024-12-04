@@ -24,6 +24,7 @@ export class RentalDetailformComponent {
     this.http.post("http://localhost:8080/add-rental-details",this.detail).subscribe(data=>{
       alert("item Added")
     })
+    
 
 }
 }

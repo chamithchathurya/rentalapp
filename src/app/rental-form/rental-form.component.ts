@@ -30,12 +30,7 @@ export class RentalFormComponent {
       alert("item Added")
     })
   }
-  update(id:any){
-    console.log(this.id);
-    this.http.patch(`http://localhost:8080/edit-item/${this.id}`).subscribe(data=>{
-      alert("item Edit")
-    })
-  }
+ 
   delete(){
     console.log(this.id);
     this.http.delete(`http://localhost:8080/delete-item/${this.id}`).subscribe(data=>{
